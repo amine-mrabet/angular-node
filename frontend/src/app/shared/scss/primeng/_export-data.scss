@@ -1,0 +1,74 @@
+app-export-data {
+    position: relative;
+}
+
+.plm-export-component {
+    h1 {
+        line-height: 30px;
+    }
+    .ui-widget-content {
+        border: 0px;
+    }
+    .ui-overlaypanel {
+        top: 30px !important;
+        right: 0px !important;
+        left: auto !important;
+        text-align: left;
+    }
+    .ui-overlaypanel-content {
+        padding: 0px;
+    }
+    .export-format {
+        margin-bottom: -20px;
+    }
+    .ui-panel .ui-panel-titlebar {
+        padding: 3px 10px;
+    }
+    .ui-panel .ui-panel-titlebar-icon {
+        font-size: 16px;
+        margin-top: 0px;
+        border: 0px;
+    }
+    .ui-widget-header .ui-panel-title {
+        font-size: 16px;
+    }
+    .ui-widget-header {
+        border: 0px;
+    }
+    .ui-panel .ui-panel-content {
+        background: #f6f7f9;
+        padding: 5px 10px 5px 10px;
+        font-size: 14px;
+        border-radius: 0;
+    }
+    .option {
+        padding-bottom: 2px;
+    }
+    .option>label {
+        margin-bottom: 0px;
+    }
+    .ui-panel .ui-button {
+        height: 23px;
+        font-size: 13px;
+        margin-left: 0px !important;
+        border: 0px;
+    }
+    .ui-panel .ui-button-text-only .ui-button-text {
+        padding: 1px 10px;
+    }
+    .ui-panel {
+        padding: 0px;
+    }
+    .item:hover {
+        cursor: pointer;
+        background: #eee;
+    }
+    .item {
+        padding: 3px 15px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    p-button {
+        position: relative;
+    }
+}

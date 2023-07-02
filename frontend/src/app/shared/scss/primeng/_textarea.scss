@@ -1,0 +1,11 @@
+.plm-textarea {
+    textarea {
+        width: 100%;
+        height: auto !important;
+    }
+}
+textarea:read-only{
+    background-color: $readonly-bg;
+    opacity: 0.7;
+}
+

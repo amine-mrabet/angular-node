@@ -1,0 +1,16 @@
+.ui-autocomplete {
+    width: 100% !important;
+    .ui-inputtext {
+        width: 100%;
+    }
+    .ui-autocomplete-multiple-container:not(.ui-state-disabled) {
+        &:hover {
+            border-color: $stateHoverBorderColor;
+        }
+
+        &.ui-state-focus {
+            border-color: $stateFocusBorderColor;
+
+        }
+    }
+}

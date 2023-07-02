@@ -1,0 +1,89 @@
+.ui-treetable {
+    margin-top: 20px;
+}
+body .ui-treetable thead {
+    border-top: 1px solid #F3F3F3;
+}
+body .ui-treetable .ui-treetable-thead>tr>th {
+    border-top: 0px;
+    color: #969696;
+    border-color: #f4f4f4;
+    background: transparent;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+body .ui-treetable .ui-treetable-tbody>tr>td {
+    border: 2px solid #f4f4f4;
+    color: #555555;
+    padding: .6em 2em;
+ }
+body .ui-treetable .ui-treetable-tbody > tr > td,
+body .ui-treetable .ui-treetable-thead > tr > th {
+   font-weight: normal;
+   border: 1px solid #F3F3F3;
+   border-top: 0px;
+   padding: 10px 10px;
+}
+body .ui-treetable .ui-treetable-tbody > tr > td {
+    word-wrap: normal;
+    max-height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+body .ui-treetable .ui-treetable-thead > tr > th {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    box-sizing: border-box;
+ }
+body .ui-treetable .ui-sortreetable-column:not(.ui-state-highlight):hover {
+    background: transparent;
+}
+
+body .ui-treetable .ui-treetable-thead>tr>th:hover {
+    background: transparent;
+}
+
+body .ui-treetable .ui-treetable-tbody>tr:nth-child(odd){
+    background-color: rgba(245,245,245,0.5);
+}
+.ui-treetable .ui-treetable-tbody>tr:nth-child(even) {
+    background-color: transparent;
+}
+
+body .ui-treetable .ui-treetable-tbody>tr:hover {
+    background-color: #f4f4f4;
+}
+
+body .ui-treetable .ui-state-highlight {
+    background-color: transparent;
+    color: #969696;
+    border: 2px solid $base-color;
+}
+.ui-treetable .ui-sortreetable-column.ui-state-highlight {
+    background-color: transparent;
+    color: #969696;
+}
+
+.ui-treetable .ui-treetable-thead>tr>th, .ui-treetable .ui-treetable-tbody>tr>td, .ui-treetable .ui-treetable-tfoot>tr>td {
+    padding: .6em 2em;
+}
+body .ui-treetable .ui-treetable-thead>tr>th.plm-treetable-check-box,
+body .ui-treetable .ui-treetable-thead>tr>th.plm-treetable-check-box:hover {
+    position: relative;
+    padding-bottom: 0px;
+    text-align: center;
+
+}
+
+body .ui-treetable .ui-treetable-thead>tr>th>input.plm-checkbox {
+    width: 1.5em;
+    height: 1.5em;
+}
+body .ui-treetable .ui-treetable-tbody>tr.difference-row{
+    background-color: #b9175c29 !important;
+    color: #ffffff !important;
+
+}

@@ -1,0 +1,58 @@
+$padding-button: 8px 12px;
+
+button {
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  padding: 0 10px;
+}
+app-menu-button button.menu,
+.plm-signout-button,
+.plm-change-lang-button,
+.plm-active-button {
+  background-color: transparent;
+  color: $white-color;
+  font-size: 12px;
+  border-radius: 0;
+  @include transition(0.5s);
+}
+
+app-menu-button button.menu:hover,
+.plm-signout-button:hover,
+.plm-change-lang-button:hover {
+  background-color: transparent;
+  color: $base-color;
+}
+.plm-change-lang-button:hover {
+  color: #e35438;
+}
+.primary .ui-button,
+.ui-button {
+  @include primaryButton();
+}
+.secondary,
+.style-createwithinsearchinput,
+.style-back,
+.style-cancel {
+  .ui-button {
+    @include secondaryButton();
+  }
+}
+.top-actions,
+.third {
+  .ui-button {
+    @include thirdButton();
+  }
+}
+.ui-button {
+  .ui-button-text {
+    display: inline-block;
+  }
+  .fa {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,51 @@
+.plm-arrayform {
+    .ui-button {
+        outline: none;
+    }
+    .ui-button-text-empty {
+        .ui-button-text  {
+            padding-right: 0px;
+        }
+    }
+    .plm-button {
+        .fa-plus-circle {
+            line-height: 40px;
+        }
+    }
+    .empty-msg {
+        margin-top: 10px;
+    }
+    .plm-row-card {
+        position: relative;
+        box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.3);
+        background: #f9fafb;
+        margin-top: 20px;
+        padding: 0px 20px 20px 20px;
+        border-radius: 4px;
+        &:hover {
+            border-color: $dropdown-hover-text;
+            transition: all 500ms;
+        }
+        .plm-row-remove {
+            .ui-button {
+                background: transparent;
+                color: $secondary-color;
+                height: auto;
+                padding: 0px;
+                font-size: 13px;
+                line-height: 1.38;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                .ui-button-text {
+
+                    padding: 10px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.card-list {
+  width: 100%;
+  max-height: $card-max-height;
+  overflow-y: auto;
+  .ui-card {
+    width: $card-width !important;
+    @include box-shadow(0px, 4px, 10px, rgba(0, 0, 0, 0.09));
+    margin: $card-margin;
+  }
+  .form {
+    text-align: right;
+  }
+}

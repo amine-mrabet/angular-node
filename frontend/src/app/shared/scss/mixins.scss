@@ -1,0 +1,200 @@
+@mixin block() {
+  width: 100%;
+  display: block;
+}
+@mixin pos() {
+  position: absolute;
+  padding: 2px 2px 5px 2px;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow: inset $top $left $blur $color;
+    -moz-box-shadow: inset $top $left $blur $color;
+    box-shadow: inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin button-box-shadow($important: null) {
+  -moz-box-shadow: 0 1px 2.5px 0 rgba(0, 0, 0, 0.26),
+    0 1px 5px 0 rgba(0, 0, 0, 0.16) $important;
+  -webkit-box-shadow: 0 1px 2.5px 0 rgba(0, 0, 0, 0.26),
+    0 1px 5px 0 rgba(0, 0, 0, 0.16) $important;
+  box-shadow: 0 1px 2.5px 0 rgba(0, 0, 0, 0.26),
+    0 1px 5px 0 rgba(0, 0, 0, 0.16) $important;
+}
+
+@mixin active-button-box-shadow($important: null) {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2) $important;
+  -moz-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2) $important;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2) $important;
+}
+
+@mixin material-shadow($important: null) {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24) $important;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24) $important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24) $important;
+}
+
+@mixin transition($value) {
+  -moz-transition: $value;
+  -o-transition: $value;
+  -webkit-transition: $value;
+  transition: $value;
+}
+
+@mixin radius($value) {
+  -moz-border-radius: $value;
+  -webkit-border-radius: $value;
+  border-radius: $value;
+}
+
+@mixin radius-top-bottom-right($value) {
+  -moz-border-radius-topright: $value;
+  -webkit-border-top-right-radius: $value;
+  border-top-right-radius: $value;
+  -moz-border-radius-bottomright: $value;
+  -webkit-border-bottom-right-radius: $value;
+  border-bottom-right-radius: $value;
+}
+
+@mixin radius-top-bottom-left($value) {
+  -moz-border-radius-topleft: $value;
+  -webkit-border-top-left-radius: $value;
+  border-top-left-radius: $value;
+  -moz-border-radius-bottomleft: $value;
+  -webkit-border-bottom-left-radius: $value;
+  border-bottom-left-radius: $value;
+}
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (min-width: 320px) and(max-width: $xs) {
+      @content;
+    }
+  } @else if $media == small-screens {
+    @media only screen and (min-width: 411px) and (max-width: $sm) {
+      @content;
+    }
+  } @else if $media == extrasmall-screens {
+    @media only screen and (max-width: 332px) {
+      @content;
+    }
+  }
+}
+
+@mixin primaryButton() {
+  transition: background-color 0.3s;
+  border: 0px;
+  font-size: 16px;
+  background: $secondary-color;
+  box-shadow: none;
+  height: 40px;
+  color: #fff;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 8px;
+  &:hover {
+    background-color: $secondary-color-hover;
+  }
+}
+
+@mixin secondaryButton() {
+  background: #fff;
+  border: 1px solid $secondary-color;
+  color: $secondary-color;
+  &:hover {
+    color: $secondary-color-hover;
+    border-color: $secondary-color-hover;
+    background-color: transparent;
+  }
+}
+
+@mixin secondaryButtonInactive() {
+  background: #fff;
+  border: 1px solid $disabled-color;
+  color: $disabled-color;
+  cursor: none;
+  &:hover {
+    color: $disabled-color;
+    border-color: $disabled-color;
+  }
+}
+
+@mixin thirdButton() {
+  background: transparent;
+  border: 0px;
+  color: $secondary-color;
+  padding-left: 0px;
+  padding-right: 0px;
+  &:hover {
+    color: #aa1e0e;
+    background: transparent;
+  }
+}
+
+@mixin buttontodo (){
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  padding: 4px 8px;
+  border-radius: 10px;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-right: 5px;
+  
+}
+
+@mixin Name(){
+  width: 214px;
+  height: 30px;
+  font-size: $font-size-xlarge;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  color: $white-color;
+  text-transform: capitalize;
+
+}
+
+@mixin Desc() {
+  height: 100%;
+  margin-bottom: 4px;
+  display: grid;
+}
+
+@mixin todoliste() {
+  text-align: left;
+  width: 360px;
+  height: auto;
+  border-radius: 4px;
+  color: $white-color;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px 0 rgba(51, 51, 51, 0.3), 0 2px 4px 0 rgba(51, 51, 51, 0.3);
+  background-color: $gradient-color;
+  border-left: 5px solid $green-color;
+  &:hover{
+    transition: 0.5s;
+      background-color: #6b7489e0;
+      border-left: 5px solid $purple-color;
+      width: 360px;  width: 360px;
+      cursor: pointer;
+    }
+}

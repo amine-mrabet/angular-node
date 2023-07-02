@@ -1,0 +1,105 @@
+$fontFamily: $font-family;
+$fontSize: 1em;
+$borderRadius: 2px;
+$disabledOpacity: 0.35;
+
+/** Vermeg Theme Color**/
+
+$plm-base-color: $base-color;
+//default state
+$plm-input-border-color: #686670;
+$plm-input-border-width: 1px;
+$plm-input-border-Radus: 0 !important;
+//focus state
+$plm-input-focus-border-color: #b4b2b7;
+$plm-focus-border-width: 2px;
+//Header
+$headerBorderWidth: 1px;
+$headerBorderColor: #d9d9d9;
+$headerBgColor: #f6f7f9;
+$headerTextColor: #1b1d1f;
+$headerFontWeight: normal;
+$headerIconTextColor: #1b1d1f;
+//Content
+$contentBorderWidth: 1px;
+$contentBorderColor: #bdbdbd;
+$contentBgColor: #ffffff;
+$contentTextColor: #222222;
+//Default State
+$stateDefaultBorderWidth: 1px;
+$stateDefaultBorderColor: #686670;
+$stateDefaultBgColor: transparent;
+$stateDefaultTextColor: #555555;
+$inputBorderRadus: 0 !important;
+//Active State
+$stateActiveBorderColor: #bebebe;
+$stateActiveBgColor: #d6d6d6;
+$stateActiveTextColor: #212121;
+//Highlight State
+$stateHighlightBorderColor: #156090;
+$stateHighlightBgColor: #f4f4f4;
+$stateHighlightTextColor: #ffffff;
+//Focus State
+$stateFocusBorderColor: #b4b2b7;
+$stateFocusBgColor: transparent;
+$stateFocusTextColor: #212121;
+$stateFocusBorderWidth: 1px;
+//Error State
+$stateErrorBorderColor: #f44336;
+$stateErrorBgColor: #f5554a;
+$stateErrorTextColor: #cd0a0a;
+//Hover State
+$stateHoverBorderColor: $plm-base-color;
+$stateHoverBgColor: rgba(0, 0, 0, 0.04);
+$stateHoverTextColor: #212121;
+//Forms
+$inputBgColor: transparent;
+$inputTextColor: #3e3d43;
+$invalidInputBorderColor: #f44336;
+$inputGroupTextColor: #222222;
+
+/** Base theme**/
+
+@import './_basetheme';
+
+/** Component style**/
+@import './_label';
+@import './_card';
+@import './_autocomplete';
+@import './_login';
+@import './_menu';
+@import './_message';
+@import './_dialog';
+@import './_table';
+@import './_tree-table';
+@import './_paginator';
+@import './_button';
+@import './_splitButton';
+@import './_datePicker';
+@import './_tabs';
+@import './_textarea';
+@import './_combobox';
+@import './_multiselect';
+@import './_toggleSwitch.scss';
+@import './_toggle-button';
+@import './_slider.scss';
+@import './_checkbox.scss';
+@import './_radiobutton.scss';
+@import './_input.scss';
+@import './_group.scss';
+@import './_externalurl';
+@import './_change-password-dialog';
+@import './_user-info';
+@import './_file-upload';
+@import './_export-data';
+@import './_workspace';
+@import './_box';
+@import './_loader';
+@import './_message-info';
+@import './_arrayform';
+@import './_wizard';
+@import './toast';
+// global
+.ui-shadow {
+  @include material-shadow(!important);
+}

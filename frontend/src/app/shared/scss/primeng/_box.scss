@@ -1,0 +1,50 @@
+.plm-screen-box {
+  margin: 20px;
+  margin-left: 40px;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border-radius: 8px;
+  float: left;
+  height: 70px;
+  overflow: visible;
+  position: relative;
+  width: 140px;
+  cursor: pointer;
+  .plm-box-content {
+    font-size: 15px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+    height: auto;
+    text-overflow: ellipsis;
+    margin: auto 0;
+    max-height: 50px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+.plm-screen-box:hover,
+.plm-screen-box:active {
+  transition: all 300ms;
+}
+.plm-close-icon-container {
+  margin-top: 10px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: -10px;
+  overflow: visible;
+  z-index: 1;
+  border: 0px;
+  color: #ffffff !important;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  .plm-close-icon {
+    padding: 4px 5px;
+    color: $base-color;
+  }
+}

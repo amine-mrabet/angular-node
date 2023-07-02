@@ -1,0 +1,96 @@
+app-user-info {
+  &::before {
+    width: 1px;
+    height: 24px;
+    border: solid 0.5px #979797;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 20px;
+  }
+}
+.user-info {
+  .ui-slidemenu {
+    top: 60px !important;
+    left: initial !important;
+    right: 15px !important;
+    padding: 0px;
+    border: 0px;
+    padding: 10px 0px;
+    border-radius: 2px !important;
+    &::before {
+      content: '';
+      content: '';
+        position: absolute;
+        top: -19px;
+        right: 20px;
+        border-top: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        width: 0px;
+        height: 0px;
+    }
+  }
+  .ui-menuitem {
+    padding: 5px;
+    border-left: 5px solid #fff;
+    border-radius: 0px;
+  }
+  .ui-menuitem:hover {
+    background: #eee;
+    color: $dropdown-hover-text;
+    background: #f9fafb;
+    transition: all 300ms;
+    color: #445292;
+    border-left: 5px solid #445292;
+    transition: all 300ms;
+  }
+  .ui-menuitem .ui-menuitem-link:hover {
+    background: transparent;
+  }
+}
+.btn-user-info {
+  .ui-button-text {
+    color: $white-color;
+    display: inline-block;
+    padding: 3px 12px 3px 16px;
+    font-weight: normal;
+  }
+  &:hover,
+  &:focus {
+    color: $icon-hover !important;
+    background: transparent !important;
+    transition: 0.300 ms all;
+    .ui-button-text {
+      transition: 0.300 ms all;
+      color: $icon-hover !important;
+    }
+  }
+  .ui-button-icon-left {
+    position: relative;
+    font-weight: 400;
+  }
+}
+span.ui-button-icon-left.fas.fa-user {
+  top: 0;
+  position: inherit;
+}
+.ui-button-text-icon-left .ui-button-icon-left{ 
+    top:50%;
+    left:15%;
+ }
+ 
+.btn-user-info.ui-button {
+  color: $white-color;
+  background: transparent;
+  padding: 0px;
+  margin-left: 0px;
+}
+.btn-user-info.ui-button:enabled:focus {
+  color: $white-color;
+  background-color: $base-color;
+}
+.btn-changPassword {
+  padding-top: 60px !important ;
+}

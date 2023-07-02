@@ -1,0 +1,38 @@
+.ui-fileupload-choose:not(.ui-state-disabled):active {
+    border-color: $base-color;
+    background: $base-color;
+    color: #fff;
+    opacity: 0.9;
+}
+.file-field {
+    .ui-fileupload-buttonbar {
+        padding: 5px 0px 0px 0px ;
+    }
+    .ui-widget-header {
+        border: 0px;
+        background: transparent;
+        font-weight: normal;
+    }
+    .ui-button {
+        background-color: #eee;
+        color: #3E3D43;
+        height: auto;
+        box-shadow: none !important;
+        display: inline-block;
+        border-radius: 2px;
+        font-size: 13px;
+        .ui-button-text {
+            padding: 0px 5px;
+            line-height: 30px;
+        }
+    }
+    .ui-fileupload-content {
+        padding: 5px 0px;
+    }
+    .ui-fileupload-files {
+        border: 1px solid #999999;
+        margin-top: 5px;
+        border-radius: 2px;
+    }
+
+}

@@ -1,0 +1,124 @@
+.ui-inputtext {
+    padding: 2px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    height: 36px;
+    width: 100%;
+    border: $input-border-size solid $input-border-color;
+    border-radius: $input-border-radius !important;
+    outline: 0 none;
+    padding: 2px 5px;
+    @include transition(border-color 0.3s);
+    &:hover:not(.ui-state-focus):not(:read-only):not(.ng-invalid) {
+        border-color: $input-hover-border-color;
+    }
+    &.ui-state-focus:not(:read-only),
+    &:focus:not(:read-only) {
+        border-color: $input-focus-border-color !important;
+    }
+
+}
+
+.input-field {
+    margin-top: 20px;
+    &.text-field{
+        display: flex;
+    }
+    .plm-formgroup {
+        width: 100%;
+    }
+    label {
+        position: absolute;
+        pointer-events: none;
+        top: 26px;
+        left: 10px;
+        transition: 0.3s ease all;
+        color: $input-placeholder-color;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+    }
+    .pl-prefix,
+    .pl-suffix {
+        margin-left: 2px;
+        width: 15%;
+        font-size: 14px;
+        line-height: 36px;
+        white-space: nowrap;
+        overflow: hidden;
+        background: $input-border-color;
+        border-radius: 4px;
+        text-align: center;
+        text-overflow: ellipsis;
+        height: 36px;
+    }
+    .pl-prefix {
+        margin-right: 2px;
+        border-radius: 4px;
+        z-index: 99;
+        &~label {
+            left: 17%;
+        }
+    }
+}
+p-inputMask {
+    width: 100%;
+}
+
+
+input.number.ui-inputtext.ui-corner-all.ui-state-default{
+    text-align: right;
+    }
+
+body .input-field input:focus~label,
+body .input-field input.ui-state-filled~label,
+body .input-field.filled input~label,
+body .input-field textarea:focus~label,
+body .input-field textarea.ui-state-filled~label,
+body .input-field .ui-inputwrapper-focus~label,
+body .input-field .ui-inputwrapper-filled~label,
+body .input-field .ui-drop-filled ~ label {
+    top: 0px;
+    font-size: 12px;
+    left: 0px;
+}
+
+
+/** Validation **/
+body .ui-inputtext.ng-dirty.ng-invalid,
+body p-dropdown.ng-dirty.ng-invalid > .ui-dropdown,
+body p-autocomplete.ng-dirty.ng-invalid > .ui-autocomplete > .ui-inputtext,
+body p-calendar.ng-dirty.ng-invalid > .ui-calendar > .ui-inputtext,
+body p-chips.ng-dirty.ng-invalid > .ui-inputtext,
+body p-inputmask.ng-dirty.ng-invalid > .ui-inputtext,
+body p-checkbox.ng-dirty.ng-invalid .ui-chkbox-box,
+body p-radiobutton.ng-dirty.ng-invalid .ui-radiobutton-box,
+body p-inputswitch.ng-dirty.ng-invalid .ui-inputswitch,
+body p-listbox.ng-dirty.ng-invalid .ui-inputtext,
+body p-multiselect.ng-dirty.ng-invalid > .ui-multiselect,
+body p-spinner.ng-dirty.ng-invalid > .ui-inputtext,
+body p-selectbutton.ng-dirty.ng-invalid .ui-button,
+body p-togglebutton.ng-dirty.ng-invalid .ui-button,
+body .ui-inputtext.ng-touched.ng-invalid,
+body p-dropdown.ng-touched.ng-invalid > .ui-dropdown,
+body p-autocomplete.ng-touched.ng-invalid > .ui-autocomplete > .ui-inputtext,
+body p-calendar.ng-touched.ng-invalid > .ui-calendar > .ui-inputtext,
+body p-chips.ng-touched.ng-invalid > .ui-inputtext,
+body p-inputmask.ng-touched.ng-invalid > .ui-inputtext,
+body p-checkbox.ng-touched.ng-invalid .ui-chkbox-box,
+body p-radiobutton.ng-touched.ng-invalid .ui-radiobutton-box,
+body p-inputswitch.ng-touched.ng-invalid .ui-inputswitch,
+body p-listbox.ng-touched.ng-invalid .ui-inputtext,
+body p-multiselect.ng-touched.ng-invalid > .ui-multiselect,
+body p-spinner.ng-touched.ng-invalid > .ui-inputtext,
+body p-selectbutton.ng-touched.ng-invalid .ui-button,
+body p-togglebutton.ng-touched.ng-invalid .ui-button{
+    border-color: $error-color;
+}
+
+input:read-only{
+    background-color: $readonly-bg;
+    opacity: 0.7;
+  }

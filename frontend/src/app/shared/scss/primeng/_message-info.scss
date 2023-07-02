@@ -1,0 +1,17 @@
+.plm-msg-info {
+    font-size: 16px;
+    background: transparent;
+    padding: 0px;
+    border-radius: 8px;
+}
+.plm-msg-info-icon {
+    background: $info-color;
+    color: #fff;
+    padding: 20px;
+    @extend .plm-msg-info;
+    .fa {
+        padding-right: 10px;
+        float: left;
+        padding-top: 5px;
+    }
+}

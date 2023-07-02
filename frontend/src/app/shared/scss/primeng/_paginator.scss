@@ -1,0 +1,197 @@
+.ui-paginator {
+  background-color: $white-color;
+  padding: 20px 0px 0px 0px;
+  border: none;
+  font-size: 13px;
+  .ui-paginator-right-content {
+    line-height: 40px;
+  }
+  .ui-inputtext {
+    font-size: 12px;
+  }
+  .ui-splitbutton,
+  .ui-dropdown,
+  .ui-multiselect {
+    @include radius(2px);
+    color: #666666;
+    width: auto;
+    min-width: auto !important;
+    outline: none;
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid $border-light;
+    label {
+      color: $default-color;
+    }
+    &:hover {
+
+    }
+  }
+  .ui-dropdown,
+  .ui-multiselect {
+    border-radius: 2px !important;
+  }
+  .ui-dropdown.ui-state-focus {
+    border: 1px solid $border-light;
+  }
+
+  .ui-splitbutton:hover {
+    .ui-menu {
+      padding: 0px;
+      .ui-menuitem-link {
+        padding: 10px;
+        text-align: left;
+      }
+    }
+  }
+  .ui-multiselect {
+    .ui-multiselect-trigger {
+       right: 5px;
+       top: 3px;
+    }
+    .ui-multiselect-item {
+      background: transparent;
+      .ui-chkbox .ui-chkbox-box.ui-state-active {
+        .ui-chkbox-icon {
+          color: $white-color;
+        }
+      }
+    }
+  }
+  .ui-multiselect:hover {
+    color: $dropdown-hover-text;
+    .ui-multiselect-label-container label {
+      color: $base-color;
+    }
+  }
+  button {
+    &:focus,
+    &:hover {
+      background: transparent !important;
+    }
+  }
+  .ui-splitbutton {
+    .ui-button {
+      @include thirdButton();
+      color: #666666;
+      font-size: 13px;
+      height: 26px;
+      .ui-button-text {
+        line-height: 26px;
+      }
+      .ui-button-icon-left {
+        top: 16px;
+      }
+      &:hover {
+        color: $dropdown-hover-text;
+      }
+    }
+    .ui-splitbutton-menubutton {
+      margin-top: 2px;
+    }
+    .ui-menu {
+      padding: 0px;
+      .ui-menuitem-link {
+        padding: 10px;
+      }
+    }
+  }
+  .ui-dropdown .ui-dropdown-label {
+    line-height: 25px;
+    padding-bottom: 0px;
+  }
+  .actions-table {
+    margin-left: 10px;
+    padding: 6px 5px;
+    &:hover {
+      color: $dropdown-hover-text;
+    }
+  }
+  .ui-multiselect {
+    .ui-multiselect-label-container {
+      padding: 5px 25px 5px 10px;
+    }
+  }
+  .ui-dropdown .ui-dropdown-trigger .fa,
+  .ui-multiselect .ui-multiselect-trigger .fa {
+    margin-top: 13px;
+  }
+  .ui-dropdown-trigger .ui-dropdown-trigger-icon {
+      top: 20px;
+  }
+  .ui-dropdown .ui-dropdown-label,
+  .ui-multiselect .ui-dropdown-label {
+    padding-right: 1.5em;
+  }
+  > a {
+    box-sizing: border-box;
+    .fa {
+      display: none;
+    }
+  }
+  > a:not(.ui-state-disabled):not(.ui-state-active):hover {
+    color: #445292;
+  }
+  .ui-paginator-next,
+  .ui-paginator-last,
+  .ui-paginator-prev,
+  .ui-paginator-first {
+    padding: 0;
+    vertical-align: top;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.7em;
+    display: inline-block;
+    width: 1em;
+    height: 42px;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    text-indent: 0;
+    border: none;
+    outline: none;
+  }
+  .ui-paginator-pages {
+    vertical-align: top;
+    margin: 0 0.375em 0 0.375em;
+    line-height: 35px;
+    a {
+      padding: 0;
+      border: 0px;
+      color: #555555;
+      min-width: 1.5em;
+      min-height: 1.5em;
+      line-height: 1.5em;
+      width: auto;
+      @include radius(50%);
+      @include transition(0.3s);
+    }
+    a.ui-state-active {
+      background-color: transparent;
+      color: $base-color;
+      font-weight: bold;
+    }
+  }
+}
+@media only all {
+  .paginator-right-display,
+  .paginator-left-display {
+    display: none;
+  }
+}
+/* Show only the paginator right component at 480px (30em x 16px) */
+@media screen and (min-width: 30em) {
+  .paginator-right-display {
+    display: block;
+  }
+}
+/* Show only the paginator left component at 800px (50em x 16px) */
+@media screen and (min-width: 50em) {
+  .paginator-left-display {
+    display: block;
+  }
+}

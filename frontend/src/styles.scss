@@ -1,0 +1,146 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../src/app/shared/scss/variables.scss";
+@import "../src/app/shared/scss/mixins.scss";
+@import '../src/app/shared/scss/primeng/components.scss';
+
+app-login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #acacac;
+}
+.menu-btn,
+.hide-menu-btn {
+  background-color: #dfc2c200;
+  color: $white-color;
+  height: 36px;
+  width: 36px;
+  font-size: 22px;
+  border-radius: 0;
+  padding: 0 15px;
+  transition: 0.5s;
+}
+.menu-btn {
+  background-color: transparent !important;
+  width: 105px !important;
+}
+.custom-p-sidebar .logo {
+  height: 70px;
+  background-color: $secondary-color;
+  border-bottom: 2px solid $gray-color;
+}
+.app-header-custom .header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 70px;
+  background: $secondary-color;
+  background-image: $secondary-color;
+  color: $white-color;
+}
+#container {
+  width: 100%;
+  text-align: center;
+}
+body .ui-sidebar-left {
+  border-radius: 0!important;
+  padding: 0;
+  width: 256px;
+}
+.ui-shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)!important;
+}
+.ui-widget-content {
+  background: #fff;
+  border-radius: 5px;
+  color: #222;
+}
+body .ui-sidebar-left .ui-sidebar-close {
+  display: block;
+  color: #fff;
+  z-index: 5;
+  position: absolute;
+  font-size: 28px;
+  top: 12px;
+  left: 12px;
+  cursor: pointer;
+}
+body .ui-sidebar-left .ui-sidebar-close .pi-times {
+  display: inline-block;
+  vertical-align: middle;
+}
+.pi {
+  font-family: primeicons;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+element.style {
+}
+body .ui-sidebar-left .ui-sidebar-close .pi-times {
+    display: inline-block;
+    vertical-align: middle;
+}
+.ui-widget, .ui-widget * {
+    box-sizing: border-box;
+}
+.pi {
+    font-family: primeicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+body .ui-sidebar-left .ui-sidebar-close {
+    display: block;
+    color: #fff;
+    z-index: 5;
+    position: absolute;
+    font-size: 28px;
+    top: 12px;
+    left: 12px;
+    cursor: pointer;
+}
+body .ui-sidebar-left .ui-sidebar-close::after {
+  content: 'Menu';
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.custom-p-sidebar .logo {
+  height: 70px;
+  background-color: red!important;
+  border-bottom: 2px solid #ccc!important;
+}
+.ui-panelmenu .ui-menuitem-icon {
+  margin-right: 0.25em;
+  vertical-align: middle;
+  padding-right: 5px;
+  font-weight: 900;
+}

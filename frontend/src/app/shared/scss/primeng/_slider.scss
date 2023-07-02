@@ -1,0 +1,50 @@
+body .ui-slider .ui-slider-handle {
+    background-color: $base-color;
+    color: #ffffff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 1.25em;
+    height: 1.25em;
+    transform: scale(0.7);
+    @include transition(all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1));
+    border: none;
+}
+
+body .ui-slider .ui-slider-handle.ui-state-focus {
+    transform: scale(1);
+}
+
+body .ui-slider .ui-slider-handle:focus {
+    outline: 0 none;
+}
+
+body .ui-slider.ui-slider-horizontal {
+    height: 2px;
+    border: 0 none;
+    background-color: #bdbdbd;
+    margin-top: 10px;
+}
+
+body .ui-slider.ui-slider-horizontal .ui-slider-handle {
+    top: -.55em;
+}
+
+body .ui-slider.ui-slider-vertical {
+    width: 2px;
+    border: 0 none;
+    background-color: #bdbdbd;
+}
+
+body .ui-slider.ui-slider-vertical .ui-slider-handle {
+    left: -.55em;
+}
+
+body .ui-slider .ui-slider-range {
+    background-color: $base-color;
+    color: #ffffff;
+}
+
+body .ui-slider:not(.ui-state-disabled) .ui-slider-handle:hover {
+    transform: scale(1);
+}

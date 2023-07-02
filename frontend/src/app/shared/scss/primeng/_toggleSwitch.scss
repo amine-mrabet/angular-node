@@ -1,0 +1,41 @@
+body .ui-inputswitch {
+  height: $input-toggleswitch-size;
+  width: $input-toggleswitch-width;
+  overflow: visible;
+  background-color: #cccccc;
+  @include radius(12px);
+  .ui-inputswitch-slider:before {
+    background-color: #ffffff;
+    @include transition(0.3s);
+    width: 18px;
+    height: 18px;
+    left: 3px;
+    top: 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.137255) 0px 1px 1px 0px,
+      rgba(0, 0, 0, 0.117647) 0px 2px 1px -1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.137255) 0px 1px 1px 0px,
+      rgba(0, 0, 0, 0.117647) 0px 2px 1px -1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.137255) 0px 1px 1px 0px,
+      rgba(0, 0, 0, 0.117647) 0px 2px 1px -1px;
+    border: none;
+  }
+  &.ui-inputswitch-checked {
+    background-color: $secondary-color;
+  }
+
+  &.ui-state-disabled {
+    background-color: $input-disabled-state-background;
+    height: $input-toggleswitch-size;
+    border: 2px solid $input-disabled-state-border;
+    .ui-inputswitch-slider:before {
+      background-color: $input-disabled-state-border;
+      width: 16px;
+      height: 16px;
+      top: 1px;
+      left: 2px;
+    }
+  }
+}
