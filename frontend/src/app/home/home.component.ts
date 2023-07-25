@@ -101,6 +101,10 @@ export class HomeComponent implements OnInit {
     }
     node.classList.add("menuitem-active")
   }
+  logout(){
+    this.authService.logout();
+    this.router.navigate(['login']);
+  }
 }
 export interface Menu {
   label: string;

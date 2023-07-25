@@ -11,6 +11,7 @@ import { PlmTemplateDirective } from './directives/plm-template.directive';
 import { LoaderService } from './services/loader.service';
 import { RequestInterceptorService } from './services/request-interceptor.service';
 import { DropdownModule, SlideMenuModule } from 'primeng/primeng';
+import {ButtonModule} from 'primeng/button';
 @NgModule({
   declarations: [
     LoaderComponent,
@@ -25,7 +26,8 @@ import { DropdownModule, SlideMenuModule } from 'primeng/primeng';
     SidebarModule,
     PanelMenuModule,
     SlideMenuModule,
-    DropdownModule
+    DropdownModule,
+    ButtonModule
   ],
   exports: [
     FormsModule,
@@ -37,7 +39,8 @@ import { DropdownModule, SlideMenuModule } from 'primeng/primeng';
     SidebarModule,
     PanelMenuModule,
     SlideMenuModule,
-    DropdownModule
+    DropdownModule,
+    ButtonModule
   ],
   providers: [LoaderService, MessageService,RequestInterceptorService]
 })
